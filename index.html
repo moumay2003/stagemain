@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #ecf0f1;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .container {
+            display: flex;
+        }
+        .navbar {
+            width: 250px;
+            background-color: var(--secondary-color);
+            height: 100vh;
+            padding: 30px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .navbar h2 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        .navbar h2:hover {
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 30px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .dashboard-title {
+            font-size: 2em;
+            color: var(--primary-color);
+        }
+        .main-content {
+            margin-top: 30px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h2>Predict</h2>
+            <h2>Alert</h2>
+            <h2>Hour</h2>
+        </nav>
+        <main class="content">
+            <header class="header">
+                <h1 class="dashboard-title">Tableau de Bord</h1>
+                <img src="Sans.png" alt="Logo de l'entreprise" class="logo">
+            </header>
+            <div class="main-content">
+                <!-- Contenu principal du dashboard ici -->
+                <p>Bienvenue sur votre tableau de bord. Ici, vous pouvez ajouter vos widgets, graphiques et autres éléments.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
