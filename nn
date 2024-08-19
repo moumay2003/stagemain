@@ -1,0 +1,3 @@
+ 'TrustServerCertificate': 'yes',
+            'extra_params': 'TrustServerCertificate=yes;',
+            'timeout': 30,
